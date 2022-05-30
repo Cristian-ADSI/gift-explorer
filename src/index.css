@@ -1,13 +1,137 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+}
+.GiftExplorerApp {
+  padding: 10px 10%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.GiftExplorerApp header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.GiftExplorerApp header h1 {
+  color: #1f1f1f;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.GiftExplorerApp header .giphy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.GiftExplorerApp header .giphy p {
+  font-size: 20px;
+  color: #525252;
+  text-transform: capitalize;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.GiftExplorerApp header .giphy img {
+  width: 150px;
+  height: 48.203px;
+  border-radius: 8px;
+}
+
+.GiftExplorerApp form {
+  width: 100%;
+}
+.GiftExplorerApp form input {
+  border: solid 1px #525252;
+  border-radius: 5px;
+  color: #525252;
+  height: 35px;
+  font-size: 18px;
+  outline: none;
+  padding: 0 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.GiftExplorerApp .gif__grid {
+  display: flex;
+  font-display: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+.GiftExplorerApp .gif__grid .gif__card {
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: rgba(82, 82, 82, 0.4) 5px 1px 10px -2px;
+}
+.GiftExplorerApp .gif__grid .gif__card p {
+  color: #525252;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+.GiftExplorerApp .gif__grid .gif__card .img__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  overflow: hidden;
+}
+.GiftExplorerApp .gif__grid .gif__card .img__container img {
+  border-radius: 5px;
+  height: 150px;
+}
+
+/* Laoder  */
+.GiftExplorerApp .loader {
+  display: flex;
+  justify-content: center;
+}
+.GiftExplorerApp .lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.GiftExplorerApp .lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #525252;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.GiftExplorerApp .lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.GiftExplorerApp .lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.GiftExplorerApp .lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
 }
